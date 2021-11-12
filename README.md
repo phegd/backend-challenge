@@ -14,6 +14,9 @@ The other states (State machine) for A given Employee are:
 - APPROVED
 - ACTIVE
 
+The allowed state transitions are:
+
+ADDED -> IN-CHECK <-> APPROVED -> ACTIVE
 
 Our backend stack is:
 - Java 11 
@@ -24,7 +27,9 @@ Our backend stack is:
 Your task is to build  Restful API doing the following:
 - An Endpoint to support adding an employee with very basic employee details including (name, contract information, age, you can decide.) With initial state "ADDED" which incidates that the employee isn't active yet.
 
-- Another endpoint to change the state of a given employee to "In-CHECK" or any of the states defined above in the state machine 
+- Another endpoint to change the state of a given employee to any of the states defined above in the state machine respecting the transition rules 
+
+- An Endpoint to fetch employee details
 
 
 Please provide a solution with the  above features with the following consideration.
