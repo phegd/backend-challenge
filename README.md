@@ -1,6 +1,6 @@
 
 
-PeopleFlow (www.pplflw.com) is a global HR platform enabling companies to hire & onboard their employees internationally, at the push of a button. It is our mission to create opportunities for anyone to work from anywhere. As work is becoming even more global and remote, there has never been a bigger chance to build a truly global HR-tech company.
+WorkMotion (www.workmotion.com) is a global HR platform enabling companies to hire & onboard their employees internationally, at the push of a button. It is our mission to create opportunities for anyone to work from anywhere. As work is becoming even more global and remote, there has never been a bigger chance to build a truly global HR-tech company.
 
 
 As a part of our backend engineering team, you will be responsible for building our core platform including an  employees managment system.
@@ -18,7 +18,8 @@ The other states (State machine) for A given Employee are:
 Our backend stack is:
 - Java 11 
 - Spring Framework 
-- Kafka
+
+
 
 Your task is to build  Restful API doing the following:
 - An Endpoint to support adding an employee with very basic employee details including (name, contract information, age, you can decide.) With initial state "ADDED" which incidates that the employee isn't active yet.
