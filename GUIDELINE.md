@@ -4,9 +4,9 @@ We really want you to succeed and hope these small tips will help you focus on t
 In the unfortunate case you don't manage to pass the review, we want to avoid unnecessary effort from your side since we respect both your effort and your time.
 
 * Please make sure that the reviewer can conveniently verify that the application works as expected
-  * Put yourself in the reviewer shoes for a minute before submitting your solution. Does your solution look easy to review to you?
+  * Put yourself in the reviewer's shoes for a minute before submitting your solution. Does your solution look easy to review to you?
 * Find a way to showcase your skill **in scope of the task**
-  * Additional functionality is welcomed as long it improves the solution in scope of this task
+  * You are welcome to implement additional functionality as long it improves the solution in scope of this task
     * This is optional. We do not expect you to go extra mile unless you feel like it
     * We do not expect much extra effort from you. We will mainly evaluate how well your solution solves the given tasks
   * Please do not implement functionality outside of scope of this task
