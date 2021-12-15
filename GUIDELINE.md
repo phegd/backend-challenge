@@ -5,13 +5,11 @@ In the unfortunate case you don't manage to pass the review, we want to avoid un
 
 * Please make sure that the reviewer can conveniently verify that the application works as expected
   * Put yourself in the reviewer shoes for a minute before submitting your solution. Does your solution look easy to review to you?
-  * Please submit a clean solution
 * Find a way to showcase your skill **in scope of the task**
   * Additional functionality is welcomed as long it improves the solution in scope of this task
     * This is optional. We do not expect you to go extra mile unless you feel like it
     * We do not expect much extra effort from you. We will mainly evaluate how well your solution solves the given tasks
   * Please do not implement functionality outside of scope of this task
-    * We do not count lines of code, we evaluate how your solutions meets task requirements
     * We don't want you to spend extra time on the functionality that won't be taken into account during evaluation
 * Make configuration as simple and concise as possible
     * We assess the quality of the programmatic solution, not the configuration
