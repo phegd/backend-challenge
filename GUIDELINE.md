@@ -1,36 +1,24 @@
 ## Guideline
 
-These are some tips to help you pass this assignment.
-We want you to succeed.
-In case you don't manage to pass the review, we want you to avoid unnecessary effort since we respect both your effort and your time.
+We really want you to succeed and hope these small tips will help you focus on the right things to pass this assignment.
+In the unfortunate case you don't manage to pass the review, we want to avoid unnecessary effort from your side since we respect both your effort and your time.
 
-* Provide unit and integration tests: **the solution that does not have tests rarely passes our review**
-* Please submit a clean solution
-    * No commented code
-    * Code must compile
-    * Tests are executable
-    * Code should be easy to read
-    * Better deliver less, but something that works
-* Find a way to showcase your skill in scope of the task
-  * If you are applying for Senior or Lead position, we expect you to manifest your skills, not merely meet the requirements
-* Do not overcomplicate
-    * We do not count lines of code, we evaluate the quality of the solution, the smaller it is, the better (yet it has to satisfy task requirements and showcase your skill - it's your task to strike a good balance between meeting requirements and brevity)
-    * We value your time and ours. We expect a single Controller, Service, and Repository. Feel free to create as many auxiliary classes as needed.
-        * It's ok to have more classes with business logic as long as it is part of the solution and makes code organization better
-        * We do not expect many model entities, even one could be enough
-    * No need to implement any functionality we didn't ask for in the task description
-        * Adding anything extra that is unrelated to the task does not give you points.
-        * some candidates submit solutions with 50+ classes - we don't need that. Both a candidate and a reviewer spend extra time on this. If the application does not pass our criteria, both persons waste more time than they should have.
+* Please make sure that the reviewer can conveniently verify that the application works as expected
+  * Put yourself in the reviewer shoes for a minute before submitting your solution. Does your solution look easy to review to you?
+  * Please submit a clean solution
+* Find a way to showcase your skill **in scope of the task**
+  * Additional functionality is welcomed as long it improves the solution in scope of this task
+    * This is optional. We do not expect you to go extra mile unless you feel like it
+    * We do not expect much extra effort from you. We will mainly evaluate how well your solution solves the given tasks
+  * Please do not implement functionality outside of scope of this task
+    * We do not count lines of code, we evaluate how your solutions meets task requirements
+    * We don't want you to spend extra time on the functionality that won't be taken into account during evaluation
 * Make configuration as simple and concise as possible
     * We assess the quality of the programmatic solution, not the configuration
     * Still we expect some minimal reasonable configuration
     * Do:
-        * Configure input validation
-        * Configure Exceptions
-        * Prefer Spring Boot auto-configuration over explicit configuration when applicable
-        * Configure anything that you think is common sense
+        * Configure anything that you think makes sense
+        * Prefer auto-configuration over explicit configuration when applicable
     * Don't:
-        * Configure low-level database properties such as pool-size, etc
-        * Configure properties not needed in the application: for instance localization
-        * Submit configuration files 50+ lines long
-
+        * Configure low-level database properties such as pool-size, session-timeout, etc
+        * Configure properties not needed in the application, for instance localization
