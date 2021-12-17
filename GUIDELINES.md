@@ -1,4 +1,4 @@
-## Guideline
+## Guidelines
 
 We really want you to succeed and hope these small tips will help you focus on the right things to pass this assignment.
 In the unfortunate case you don't manage to pass the review, we want to avoid unnecessary effort from your side since we respect both your effort and your time.
