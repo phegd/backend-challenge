@@ -3,24 +3,18 @@
 WorkMotion (www.workmotion.com) is a global HR platform enabling companies to hire & onboard their employees internationally, at the push of a button. It is our mission to create opportunities for anyone to work from anywhere. As work is becoming even more global and remote, there has never been a bigger chance to build a truly global HR-tech company.
 
 
-As a part of our backend engineering team, you will be responsible for building our core platform including an  employees managment system.
+As a part of our backend engineering team, you will be responsible for building our core platform including an  employee management system.
 
-The employees on this system are assigned to different states, Initially when an employee is added it will be assigned "ADDED" state automatically .
+The employees on this system are assigned to different states.
 
-
-The other states (State machine) for A given Employee are:
+The states (State machine) for A given Employee are:
 - ADDED
 - IN-CHECK
 - APPROVED
 - ACTIVE
 
-The allowed state transitions are:
+Initially when an employee is added it will be assigned "ADDED" state automatically.
 
-ADDED -> IN-CHECK <-> APPROVED -> ACTIVE
-
-Our backend stack is:
-- Java 11 
-- Spring Framework 
 
 The allowed state transitions are:
 
@@ -49,6 +43,19 @@ Transition from IN_CHECK state to APPROVED state happens automatically when the 
 Transition from IN_CHECK state to APPROVED without meeting the condition above is not allowed.
 
 
+Here is an example how a sequence of requests might look like:
+
+1. create employee
+2. Update state of an employee to IN_CHECK
+3. Update substate of an employee to SECURITY_CHECK_FINISHED
+4. Update substate of an employee to SET WORK_PERMIT_CHECK_FINISHED (employee is auto-transitioned to APPROVED state)
+5. Update state of an employee to ACTIVE
+
+
+Our backend stack is:
+- Java 11
+- Spring Framework
+
 Your task is to build  Restful API doing the following:
 - An Endpoint to support adding an employee with very basic employee details including (name, contract information, age, you can decide.) With initial state "ADDED" which incidates that the employee isn't active yet.
 
@@ -59,9 +66,13 @@ Your task is to build  Restful API doing the following:
 
 Please provide a solution with the  above features with the following consideration.
 
-- Being simply executable with the least effort Ideally using Docker and docker-compose or any smailiar approach.
-- For state machine could be as simple as of using ENUM or by using https://projects.spring.io/spring-statemachine/ 
-- Please provide testing for your solution.
+- Being simply executable with minimum effort. Ideally using Docker and docker-compose or any similar approach
+- For state management (State machine) you can use any library or data structure you consider appropriate
+    - Some suggestions from our side (these are only suggestions, feel free to use something else if you want):
+        - ENUM with states
+        - Stateless4j library: https://github.com/stateless4j/stateless4j
+        - Spring state machine: https://projects.spring.io/spring-statemachine/
+- Please provide testing for your solution
 - Providing an API Contract e.g. OPENAPI spec. is a big plus
 
 
