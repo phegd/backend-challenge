@@ -47,8 +47,16 @@ Here is an example how a sequence of requests might look like:
 
 1. create employee
 2. Update state of an employee to IN_CHECK
-3. Update substate of an employee to SECURITY_CHECK_FINISHED
-4. Update substate of an employee to SET WORK_PERMIT_CHECK_FINISHED (employee is auto-transitioned to APPROVED state)
+3. Update substate of IN_CHECK state of an employee to SECURITY_CHECK_FINISHED
+4. Update substate of IN_CHECK state an employee to WORK_PERMIT_CHECK_FINISHED (employee is auto-transitioned to APPROVED state)
+5. Update state of an employee to ACTIVE
+
+Another possible sequence of requests is:
+
+1. create employee
+2. Update state of an employee to IN_CHECK
+3. Update substate of IN_CHECK state an employee to WORK_PERMIT_CHECK_FINISHED
+4. Update substate of IN_CHECK state an employee to SECURITY_CHECK_FINISHED (employee is auto-transitioned to APPROVED state)
 5. Update state of an employee to ACTIVE
 
 
@@ -57,7 +65,7 @@ Our backend stack is:
 - Spring Framework
 
 Your task is to build  Restful API doing the following:
-- An Endpoint to support adding an employee with very basic employee details including (name, contract information, age, you can decide.) With initial state "ADDED" which incidates that the employee isn't active yet.
+- An Endpoint to support adding an employee with very basic employee details including (name, contract information, age, you can decide.) With initial state "ADDED" which indicates that the employee isn't active yet.
 
 - Another endpoint to change the state of a given employee to any of the states defined above in the state machine respecting the transition rules 
 
