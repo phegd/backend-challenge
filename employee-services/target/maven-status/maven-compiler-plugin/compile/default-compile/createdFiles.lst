@@ -1,0 +1,7 @@
+com\tech26\robotfactory\entities\OrderDetails.class
+com\tech26\robotfactory\entities\Materials.class
+com\tech26\robotfactory\entities\RobotPart.class
+com\tech26\robotfactory\entities\FaceTypes.class
+com\tech26\robotfactory\RobotfactoryApplication.class
+com\tech26\robotfactory\entities\Mobility.class
+com\tech26\robotfactory\entities\ArmTypes.class
